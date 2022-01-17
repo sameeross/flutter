@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'utils/routes.dart';
 
 class Loginpage extends StatelessWidget {
   @override
@@ -34,8 +35,12 @@ class Loginpage extends StatelessWidget {
                 // ignore: prefer_const_constructors
                 ElevatedButton(
                   onPressed: () {
-                    print('hi sk');
+                    Navigator.pushNamed(context, Myroutes.homeroute);
                   },
+                  style: TextButton.styleFrom(
+                    minimumSize: Size(150, 50),
+                    backgroundColor: Colors.black,
+                  ),
                   child: const Text('login'),
                 )
               ],
