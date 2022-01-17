@@ -1,6 +1,7 @@
 import 'package:cpc/homepage.dart';
 import 'package:cpc/loginpage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,8 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: GoogleFonts.openSans().fontFamily,
+      ),
       debugShowCheckedModeBanner: false,
-      initialRoute: "/homepage",
       routes: {
         "/": (context) => Loginpage(),
         "/homepage": (context) => Homepage2(),
