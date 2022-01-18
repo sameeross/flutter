@@ -1,3 +1,4 @@
+import 'package:cpc/loginpage.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -24,8 +25,8 @@ class Homepage2 extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text('This is app with app bar'),
-        ),
+            // ignore: unnecessary_string_interpolations
+            child: Text('$username')),
       ),
       drawer: Drawer(),
     );
